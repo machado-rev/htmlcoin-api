@@ -996,4 +996,16 @@ StatisticService.prototype.getTotal = function(nextCb) {
 
 };
 
+/**
+ *
+ * @return {BigNumber} supply - BigNumber representation of total supply
+ */
+StatisticService.prototype.getTotalSupply  = function() {
+    var height = this.node.services.htmlcoind.height;
+    var newHeightSinceGenesis = height - 798;
+    var newCoinSinceGenesis = newHeightSinceGenesis * 1250;
+    var supply = newCoinSinceGenesis + 79800000000;
+    return new BigNumber(supply);
+}
+
 module.exports = StatisticService;
