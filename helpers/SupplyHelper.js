@@ -14,4 +14,3 @@ module.exports = {
     }
 
 };
->>>>>>> f3c4410... Upd total Pos Amount
