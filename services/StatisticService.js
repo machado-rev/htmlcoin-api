@@ -1,7 +1,7 @@
 'use strict';
 
 var async = require('async');
-var bitcore = require('qtumcore-lib');
+var bitcore = require('htmlcoin-lib');
 var BigNumber = require('bignumber.js');
 var LRU = require('lru-cache');
 var Common = require('../lib/common');
@@ -63,7 +63,7 @@ util.inherits(StatisticService, EventEmitter);
 StatisticService.prototype.start = function (callback) {
 
     var self = this,
-        height = self.node.services.qtumd.height;
+        height = self.node.services.htmlcoind.height;
 
     return async.waterfall([function (callback) {
         return self.lastBlockRepository.setLastBlockType(STATISTIC_TYPE, 0, function(err) {
@@ -119,7 +119,7 @@ StatisticService.prototype.start = function (callback) {
             return callback(err);
         }
 
-        self.node.services.qtumd.on('tip', self._rapidProtectedUpdateTip.bind(self));
+        self.node.services.htmlcoind.on('tip', self._rapidProtectedUpdateTip.bind(self));
         self._rapidProtectedUpdateTip(height);
 
         return callback(err);
