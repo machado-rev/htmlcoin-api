@@ -8,9 +8,9 @@
 ## Table of Contents
 * [Getting Started](#getting-started)
 * [DGP info](#dgpinfo)
-* [QRC20 info](#qrc20-info)
-* [QRC20 transfers](#qrc20-transfers)
-* [QRC20 balances](#qrc20-balances)
+* [HRC20 info](#hrc20-info)
+* [HRC20 transfers](#hrc20-transfers)
+* [HRC20 balances](#hrc20-balances)
 
 ### Statistics
 * [Total 24h](#total-24h-statistic)
@@ -152,7 +152,7 @@ or
 
 Eg:
 ```
-  `GET` /htmlcoin-api/tokens/QNdW79juyJNJ89h99D9vfo5QhCZpmavJNX/transactions?limit=20&offset=1&from_block=34101&to_block=34378&from_date_time=2017-10-27T01:23:10.000Z&to_date_time=2018-10-27T01:24:10.000Z&addresses[]=QbmrFnBhyMKUhrabXfaAWZTncSWbJA8FsG&addresses[]=QarHW2HjV8Z3njxiTuvUZU3hmqahKNZ49y
+  `GET` /htmlcoin-api/tokens/HNdW79juyJNJ89h99D9vfo5QhCZpmavJNX/transactions?limit=20&offset=1&from_block=34101&to_block=34378&from_date_time=2017-10-27T01:23:10.000Z&to_date_time=2018-10-27T01:24:10.000Z&addresses[]=HbmrFnBhyMKUhrabXfaAWZTncSWbJA8FsG&addresses[]=HarHW2HjV8Z3njxiTuvUZU3hmqahKNZ49y
 ```
 
 This would return:
@@ -161,8 +161,8 @@ This would return:
     "limit": 20,
     "offset": 1,
     "addresses": [
-        "QbmrFnBhyMKUhrabXfaAWZTncSWbJA8FsG",
-        "QarHW2HjV8Z3njxiTuvUZU3hmqahKNZ49y"
+        "HbmrFnBhyMKUhrabXfaAWZTncSWbJA8FsG",
+        "HarHW2HjV8Z3njxiTuvUZU3hmqahKNZ49y"
     ],
     "from_block": 34101,
     "to_block": 34378,
@@ -171,11 +171,11 @@ This would return:
     "count": 2,
     "items": [
         {
-            "contract_address_base": "QNdW79juyJNJ89h99D9vfo5QhCZpmavJNX",
+            "contract_address_base": "HNdW79juyJNJ89h99D9vfo5QhCZpmavJNX",
             "block_height": 34377,
             "tx_hash": "e5c16ea5785fed909957100c3721a62f5f5dfe427af1c926ba11e64c3f905fab",
-            "from": "QNvEBPtXwezdJjkUUy2JF6pirGn1vtkaNt",
-            "to": "QarHW2HjV8Z3njxiTuvUZU3hmqahKNZ49y",
+            "from": "HNvEBPtXwezdJjkUUy2JF6pirGn1vtkaNt",
+            "to": "HarHW2HjV8Z3njxiTuvUZU3hmqahKNZ49y",
             "value": "100000000000",
             "block_date_time": "2017-10-27T12:28:48.000Z"
         }
@@ -310,11 +310,11 @@ This would return:
 ### Total Supply Statistic
 
 ```
-  `GET` /insight-api/circulating-supply
+  `GET` /htmlcoin-api/circulating-supply
 ```
 or
 ```
-  `GET` /insight-api/circulating-supply/?format=object
+  `GET` /htmlcoin-api/circulating-supply/?format=object
 ```
 This would return:
 ```
@@ -329,7 +329,7 @@ or
 
 
 ```
-  `GET` /insight-api/supply
+  `GET` /htmlcoin-api/supply
 ```
 or
 ```
@@ -630,17 +630,17 @@ resp:
 }
 ```
 
-### QRC20 info
+### HRC20 info
 ```
   /htmlcoin-api/erc20/:contractAddress
 ```
 
-### QRC20 transfers
+### HRC20 transfers
 ```
   /htmlcoin-api/erc20/:contractAddress/transfers
 ```
 
-### QRC20 balances
+### HRC20 balances
 ```
   /htmlcoin-api/erc20/:contractAddress/balances
 ```
