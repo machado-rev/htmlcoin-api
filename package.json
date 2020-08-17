@@ -40,7 +40,7 @@
     "morgan": "^1.7.0",
     "htmlcoin-lib": "git://github.com/HTMLCOIN/htmlcoin-lib.git#master",
     "request": "^2.83.0",
-    "web3": "^0.18.4"
+    "web3": "^0.20.7"
   },
   "devDependencies": {
     "chai": "^3.5.0",
