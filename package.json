@@ -1,13 +1,13 @@
 {
   "name": "htmlcoin-api",
   "description": "A HTMLCOIN blockchain REST and web socket API service for HTMLCOINCORE Node.",
-  "version": "0.0.26",
-  "repository": "https://github.com/HTMLCOIN/htmlcoin-api.git",
+  "version": "0.0.27",
+  "repository": "https://github.com/machado-rev/htmlcoin-api.git",
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/HTMLCOIN/htmlcoin-api/issues"
+    "url": "https://github.com/machado-rev/htmlcoin-api/issues"
   },
-  "homepage": "https://github.com/HTMLCOIN/htmlcoin-api",
+  "homepage": "https://github.com/machado-rev/htmlcoin-api",
   "license": "MIT",
   "keywords": [
     "insight",
@@ -38,7 +38,7 @@
     "moment": "^2.19.3",
     "mongoose": "^4.11.8",
     "morgan": "^1.7.0",
-    "htmlcoin-lib": "git://github.com/HTMLCOIN/htmlcoin-lib.git#master",
+    "htmlcoin-lib": "git://github.com/machado-rev/htmlcoin-lib.git#master",
     "request": "^2.83.0",
     "web3": "^0.20.7"
   },
